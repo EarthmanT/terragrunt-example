@@ -5,11 +5,9 @@
 # notation.
 
 
-module "vpc" {
-  source  = "terraform-aws-modules/vpc/aws"
-  version = "5.1.2"
+terraform {
+  source = "tfr:///terraform-aws-modules/vpc/aws?version=5.1.2"
 }
-
 
 # Indicate what region to deploy the resources into
 generate "provider" {
