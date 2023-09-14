@@ -4,7 +4,7 @@
 # Note the extra `/` after the protocol is required for the shorthand
 # notation.
 terraform {
-  source = "tfr:///terraform-aws-modules/vpc/aws?version=5.1.1"
+  # source = "tfr:///terraform-aws-modules/vpc/aws?version=5.1.1"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
