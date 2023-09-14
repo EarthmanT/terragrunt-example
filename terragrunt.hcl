@@ -3,9 +3,13 @@
 # "tfr://registry.terraform.io/terraform-aws-modules/vpc/aws?version=3.5.0".
 # Note the extra `/` after the protocol is required for the shorthand
 # notation.
-terraform {
-  source = "tfr:///terraform-aws-modules/vpc/aws?version=4.0.0"
+
+
+module "vpc" {
+  source  = "terraform-aws-modules/vpc/aws"
+  version = "5.1.2"
 }
+
 
 # Indicate what region to deploy the resources into
 generate "provider" {
