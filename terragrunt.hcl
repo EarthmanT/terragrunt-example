@@ -5,6 +5,12 @@
 # notation.
 terraform {
   source = "tfr:///terraform-aws-modules/vpc/aws?version=5.1.1"
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "3.74.0"
+    }
+  }
 }
 
 # Indicate what region to deploy the resources into
