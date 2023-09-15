@@ -6,7 +6,7 @@
 
 
 terraform {
-  source = "tfr:///terraform-aws-modules/vpc/aws?version=5.1.2"
+  source = "tfr:///terraform-aws-modules/vpc/aws//examples/simple?version=5.1.2"
 }
 
 # Indicate what region to deploy the resources into
